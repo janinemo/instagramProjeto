@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76.273" height="35.834" viewBox="0 0 76.273 35.834">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_35" data-name="Retângulo 35" width="35.834" height="76.273" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_50" data-name="Grupo 50" transform="translate(76.273) rotate(90)">
+    <g id="Grupo_45" data-name="Grupo 45" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <g id="Grupo_51" data-name="Grupo 51" transform="translate(3.311 3.312)">
+        <path id="Caminho_61" data-name="Caminho 61" d="M13.4,0C13.4,7.554,0,6.252,0,15.891" transform="translate(0 47.672)" fill="none" stroke="#e0e0e0" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+        <path id="Caminho_62" data-name="Caminho 62" d="M13.4,0C13.4,7.554,0,6.252,0,15.89" transform="translate(0 15.891)" fill="none" stroke="#e0e0e0" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+        <path id="Caminho_63" data-name="Caminho 63" d="M13.4,15.892C13.4,8.338,0,9.639,0,0" transform="translate(0 31.78)" fill="none" stroke="#e0e0e0" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+        <path id="Caminho_64" data-name="Caminho 64" d="M13.4,15.891C13.4,8.338,0,9.639,0,0" fill="none" stroke="#e0e0e0" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Grupo_50-2" data-name="Grupo 50" transform="translate(21.891 12.711)">
+        <path id="Caminho_65" data-name="Caminho 65" d="M13.4,0C13.4,7.554,0,6.252,0,15.891" transform="translate(0 47.672)" fill="none" stroke="#00695c" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Caminho_66" data-name="Caminho 66" d="M13.4,0C13.4,7.554,0,6.252,0,15.889" transform="translate(0 15.891)" fill="none" stroke="#00695c" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Caminho_67" data-name="Caminho 67" d="M13.4,15.892C13.4,8.338,0,9.639,0,0" transform="translate(0 31.78)" fill="none" stroke="#00695c" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Caminho_68" data-name="Caminho 68" d="M13.4,15.891C13.4,8.338,0,9.639,0,0" transform="translate(0 0)" fill="none" stroke="#00695c" stroke-miterlimit="10" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,70 @@
+.section {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    display: block;
+}
+
+.container {
+    min-height: 800px;
+    max-width: 1140px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.column {
+    width: 100%; //PODE VARIAR
+    position: relative;
+    display: flex;
+}
+
+.wrap {
+    width: 100%;
+    position: relative;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+body{
+    background-color: $dark-color;
+
+    font-family: 'SpaceMono', monospace;
+    font-weight: normal;
+}
+
+.memphis{
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+
+
+// TABLETS
+@media (max-width:1024px) {
+    .container {
+        max-width: 1024px;
+        padding: 0 30px;
+    }
+}
+
+// CELULARES
+@media (max-width:765px)  {
+    .container {
+        max-width: 765px;
+        padding: 0 20px;
+    }
+}

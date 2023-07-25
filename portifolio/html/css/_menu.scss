@@ -1,0 +1,97 @@
+//ESTILO MENU STICKY
+
+.my-menu {
+    z-index: 10;
+    transition: background-color 1s ease;
+
+    background-color: rgba(0,0,0,0.3);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+
+    .menu-sticky{
+        min-height: 130px;
+        transition: min-height 1s ease;
+
+        .row {
+            .col-15 {
+                width: 15%;
+            }
+
+            .col-40 {
+                width: 40%;
+            }
+    
+            .col-85 {
+                width: 85%;
+            }
+
+            .menu-items{
+                font-family: 'LeagueSpartan';
+                color: $light-color;
+                font-size: 25px;
+                line-height: 30px;
+
+                flex-wrap: wrap;
+                justify-content: center;
+                ul {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+
+                    list-style: none;
+                    li{
+                        cursor: pointer;
+
+                        a{
+                            text-decoration: none;
+                            font-family: 'LeagueSpartan';
+                            color: $light-color;
+                            font-size: 25px;
+                            line-height: 30px;
+                            transition: all ease 500ms;
+
+                            &:hover{
+                                color: darken($light-color, 20)
+                            }
+                        }
+                    }                        
+                }
+            }
+
+            .menu-buttons{
+                //flex-wrap: nowrap; //verificar depois
+                flex-direction: row;
+        
+                .button{
+                    text-decoration: none;
+                    list-style: none;
+                    border-radius: 30px;
+                    padding: 5px;
+                    border: solid $accent 2px;
+                    margin: 10px;
+                    cursor: pointer;
+            
+                    min-width: 190px;
+                    text-align: center;
+            
+                    font-family: 'LeagueSpartan';
+                    color: $light-color;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    &.blured{
+        background-color: rgba(0,0,0,0.5); 
+        backdrop-filter: saturate(180%) blur(20px);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+
+        .menu-sticky{
+            min-height: 110px;
+        }
+    }
+}

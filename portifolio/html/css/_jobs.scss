@@ -1,0 +1,296 @@
+// HEADER SECTION
+.header {
+    padding-top: 100px;
+    overflow: hidden;
+    background-image: url("../img/bg/bg-jobs.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .image-content{
+        img{
+            position: absolute;
+            right: 0;
+            bottom: -60px;
+            width: 685px;
+        }
+    }
+
+    .row{
+        
+        .wrap{
+            flex-direction: column;
+            align-items: flex-start;
+            flex-wrap: nowrap; 
+        }
+
+        .text-content {
+            justify-content: flex-start;
+
+            h1 {
+                font-family: 'LeagueSpartan', sans-serif;
+                font-weight: bold;
+                font-size: 70px;
+                line-height: 80px;
+                color: $light-color;
+
+                span{
+                    font-size: 50px;
+                    font-weight: normal;
+                }
+            }
+
+            p{
+                font-family: 'SpaceMono', monospace;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: $light-color;
+                width: 530px;
+
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            p.button-fill{
+                font-family: 'LeagueSpartan';
+                font-size: 20px;
+
+                width: auto;
+                background-color: $accent;
+                padding: 15px 30px;
+
+                border-radius: 30px;
+                cursor: pointer;
+            }
+
+            .header-logo{
+                top: -315px;
+                right: -445px;
+            }
+        }      
+    }
+}
+
+// GRID-JOBS
+.grid-jobs {
+    padding: 50px;
+
+    .container{
+        flex-direction: column;
+        min-height: auto;
+
+        .text-content{
+            color: $light-color;
+
+            h1{
+                margin-top: 60px;
+            }
+
+            p{
+                font-family: 'SpaceMono', monospace;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: $light-color;
+
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            .m1{
+                width: 20px;
+                top: 80px;
+                left: -20px;
+            }
+        }
+        
+    }
+
+    .grid-list{
+        display: flex;
+        justify-content: space-between;
+        .grid-item{
+            margin-top: 50px;
+            width: 26%;
+            height: 300px;
+            color: $light-color;
+            position: relative;
+
+            background-color: $medium-grey;
+
+            .banner{
+                background-image: url(../img/bg/bg-jobs.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                position: relative;
+
+                height: 125px;
+
+                .overlay{
+                    position: absolute; 
+                    bottom: 0; 
+                    background: $dark-color;
+                    opacity: 50%;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .title{
+                    position: absolute;
+                    top:10px;
+                    left:10px;
+                }
+                .skills{
+                    position: absolute;
+                    bottom: 15px;
+                    right: 15px;
+                    font-size: 10px;
+                    .skill{
+                        display: inline;
+                        border-radius: 50px;
+                        border: solid 1px $light-color;
+                        padding: 3px;
+                    }
+                }                
+            }
+            
+            .descricao{
+                padding: 10px;
+                .desc-peq{
+                    font-size: 12px;
+                }
+            }
+            
+            .btn-ver-mais{
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+
+                border-radius: 50px;
+                border: solid 1px $light-color;
+
+                padding: 5px;
+                font-size: 12px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+//JOB SHOW CASE
+.job-show-case{
+    display: none;
+    &.open{
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 15;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: saturate(180%) blur(20px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        .container{
+            background-color: $light-color;
+            width: 80%;
+            align-items: flex-start;
+            min-height: 0px;
+    
+            .wrap{
+                padding: 0;
+    
+                .banner {
+                    width: 100%;
+                    height: 35vh;
+                    background-color: rgba(0, 0, 0, 0.5);
+    
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+    
+                    position: relative;
+
+                    padding: 30px;
+
+                    color: $light-color;                    
+
+                    .title{
+                        font-family: LeagueSpartan;
+                        font-weight: 700;
+                        font-size: 40px;
+                    }
+
+                    .skills{
+                        position: absolute;
+                        bottom: 30px;
+                        right: 30px;
+                        font-size: 18px;
+                        .skill{
+                            display: inline;
+                            border-radius: 50px;
+                            border: solid 1px $light-color;
+                            padding: 3px 10px;
+                        }
+                    }
+
+                    .close-button{
+                        position: absolute;
+                        top: 20px;
+                        right: 20px;
+                        cursor: pointer;
+                        padding: 10px;
+                    }
+
+                    .overlay{
+                        position: absolute; 
+                        bottom: 0;
+                        left:0;
+                        background: $dark-color;
+                        opacity: 50%;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .descricao{
+                    padding: 30px;
+                    overflow: auto;
+                    height: 55vh;
+
+                    .desc{
+                        font-family: LeagueSpartan;
+                        font-weight: 700;
+                        font-size: 40px;
+                    }
+
+                    .desc-peq{
+                        margin : 20px 0;
+                    }
+
+                    .button-fill{
+                        font-family: 'LeagueSpartan';
+                        font-size: 20px;
+        
+                        width: fit-content;
+                        color: $light-color;
+                        background-color: $accent;
+                        padding: 15px 30px;
+        
+                        border-radius: 30px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FOOTER
+.footer{
+    background-color: $accent;
+}

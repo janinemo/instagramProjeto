@@ -1,0 +1,328 @@
+// HEADER SECTION
+
+.header {
+    padding-top: 100px;
+
+    background-image: url("../img/bg/bg-cover.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .row{
+        .column{
+            width: 50%;
+        }
+
+        .text-content {
+            justify-content: flex-start;
+
+            h1 {
+                font-family: 'LeagueSpartan', sans-serif;
+                font-weight: bold;
+                font-size: 70px;
+                line-height: 80px;
+                color: $light-color;
+            }
+
+            p{
+                font-family: 'SpaceMono', monospace;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: $light-color;
+                width: 515px;
+            }
+
+            .m1{
+                top: 30px;
+                left: 50px;
+            }
+
+            .m2{
+                bottom: 60px;
+                right: 140px;
+            }
+        }
+
+        .image-content{
+            justify-content: flex-end;
+            
+            .perfil {
+                width: 455px;
+                height: 455px;
+        
+                border: $accent 5px solid;
+                border-radius: 50%;
+            }
+
+            .m3{
+                top: -15px;
+                left: 90px;
+            }
+        }        
+    }
+}
+
+
+// DADOS PESSOAIS
+
+.dados-pessoais {
+
+    padding-top: 100px;
+
+    .container{
+        flex-direction: column;
+
+        .row{
+            padding-top: 50px;
+        }
+
+        .wrap{
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+
+            img {
+                position: absolute;
+                top: 20px;
+                left: -30px;
+            }
+
+            h1.title{
+                font-family: 'LeagueSpartan', sans-serif;
+                font-weight: bold;
+                font-size: 55px;
+                line-height: 60px;
+                color: $light-color;
+            }
+
+            h2.subtitle{
+                font-family: 'LeagueSpartan', sans-serif;
+                font-weight: normal;
+                font-size: 40px;
+                line-height: 45px;
+                color: $light-color;
+
+                margin-bottom: 30px;
+            }
+
+            p.description{
+                font-family: 'SpaceMono', monospace;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: $light-color;
+
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+
+    } 
+}
+
+// HISTÓRICO ACADÊMICO
+
+.historico-academico {
+
+    padding-top: 100px;
+    padding-bottom: 200px;
+    background-color: $light-color;
+    color: $dark-color;
+
+    .container{
+        flex-direction: column;
+
+        .row{
+            padding-top: 60px;
+        }
+
+        .wrap{
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            img {
+                position: absolute;
+                top: 20px;
+                left: -30px;
+            }
+
+            h1.title{
+                font-family: 'LeagueSpartan', sans-serif;
+                font-weight: bold;
+                font-size: 55px;
+                line-height: 60px;
+            }
+
+            h2.subtitle{
+                font-family: 'LeagueSpartan', sans-serif;
+                font-weight: normal;
+                font-size: 40px;
+                line-height: 45px;
+
+                margin-bottom: 30px;
+            }
+
+            p.description{
+                font-family: 'SpaceMono', monospace;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;                
+
+                span{
+                    font-weight: bold;
+                }
+            }
+
+            li{
+                padding-bottom: 1em;
+                font-family: 'SpaceMono', monospace;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+    } 
+}
+
+// CURSOS EXTRAS
+
+.cursos-extras {
+
+    padding-top: 100px;
+    padding-bottom: 200px;
+    color: $light-color;
+
+    .container{
+        flex-direction: column;
+
+        .row{
+            padding-top: 60px;
+        }
+
+        .wrap{
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            img {
+                position: absolute;
+                top: 20px;
+                left: -30px;
+            }
+
+            h1.title{
+                font-family: 'LeagueSpartan', sans-serif;
+                font-weight: bold;
+                font-size: 55px;
+                line-height: 60px;
+            }
+
+            h2.subtitle{
+                font-family: 'LeagueSpartan', sans-serif;
+                font-weight: normal;
+                font-size: 40px;
+                line-height: 45px;
+
+                margin-bottom: 30px;
+            }
+
+            p.description{
+                font-family: 'SpaceMono', monospace;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;                
+
+                span{
+                    font-weight: bold;
+                }
+            }
+
+            li{
+                padding-bottom: 1em;
+                font-family: 'SpaceMono', monospace;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+    } 
+}
+
+// CONTATO
+
+.contato {
+
+    padding-top: 100px;
+    padding-bottom: 200px;
+    background-color: $light-color;
+    color: $dark-color;
+
+    .container{
+        flex-direction: column;
+
+        .row{
+            padding-top: 60px;
+
+            &.social {
+                padding-top: 0px;
+            }
+        }
+
+        .wrap{
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+
+            img {
+                position: absolute;
+                top: 20px;
+                left: -30px;
+            }
+
+            h1.title{
+                font-family: 'LeagueSpartan', sans-serif;
+                font-weight: bold;
+                font-size: 55px;
+                line-height: 60px;
+            }
+
+            h2.subtitle{
+                font-family: 'LeagueSpartan', sans-serif;
+                font-weight: normal;
+                font-size: 40px;
+                line-height: 45px;
+
+                margin-bottom: 30px;
+            }
+
+            p.description{
+                font-family: 'SpaceMono', monospace;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;                
+
+                span{
+                    font-weight: bold;
+                }
+            }
+
+            li{
+                padding-bottom: 1em;
+                font-family: 'SpaceMono', monospace;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+    } 
+}

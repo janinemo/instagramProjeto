@@ -1,0 +1,239 @@
+// HEADER SECTION
+.header {
+    padding-top: 100px;
+    overflow: hidden;
+    background-image: url("../img/bg/bg-inicial-page.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .row{
+        
+        .wrap{
+            flex-direction: column;
+            align-items: flex-start;
+            flex-wrap: nowrap; 
+        }
+
+        .text-content {
+            justify-content: flex-start;
+
+            h1 {
+                font-family: 'LeagueSpartan', sans-serif;
+                font-weight: bold;
+                font-size: 70px;
+                line-height: 80px;
+                color: $light-color;
+
+                span{
+                    font-weight: normal;
+                }
+            }
+
+            p{
+                font-family: 'SpaceMono', monospace;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: $light-color;
+                width: 530px;
+
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            .button-fill{
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: $light-color;
+
+                font-family: 'LeagueSpartan';
+                font-size: 20px;
+
+                width: auto;
+                background-color: $accent;
+                padding: 15px 30px;
+
+                border-radius: 30px;
+
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            .header-logo{
+                top: -315px;
+                right: -445px;
+            }
+        }      
+    }
+}
+
+// PARTNERS SECTION
+.partners {
+    background-color: $light-color;
+    .container{
+        min-height: 160px;
+        .wrap{
+            justify-content: space-between;
+        }
+    }
+}
+
+// SHOWCASE SECTION #1
+.showcase-1{
+    .container{
+        min-height: 1050px;
+        .row{
+            .column{
+                width: 50%;
+            }
+            .image-content{
+                .wrap{
+                    margin-left: -250px;
+                    img{
+                        width: 655px;
+                    }
+                }
+                
+            }
+    
+            .text-content{
+                height: auto;
+                color: $light-color;
+    
+                h1{
+                    font-family: 'LeagueSpartan', sans-serif;
+                    font-weight: bold;
+                    font-size: 55px;
+                    line-height: 60px;
+                    color: $light-color;
+    
+                    span{
+                        font-weight: normal;
+                        color: $accent;
+                    }
+                }
+    
+                p{
+                    margin-top: 30px;
+                    font-family: 'SpaceMono', monospace;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: $light-color;
+                }
+
+                p.button-fill{
+                    font-family: 'LeagueSpartan';
+                    font-size: 20px;
+                    
+                    margin-top: 40px;
+                    width: auto;
+                    background-color: $accent;
+                    padding: 15px 30px;
+    
+                    border-radius: 30px;
+                }
+    
+                .m1{
+                    top: -20px;
+                    left: -35px;
+                }
+            }
+        }
+    }
+}
+
+// SHOWCASE SECTION #2
+.showcase-2{
+    img{
+        position: absolute;
+        right: 0;
+    }
+    background-color: $light-color;
+    .container{
+        min-height: 945px;
+        .row{
+            .column{
+                width: 75%;
+            }
+    
+            .text-content{
+                height: auto;
+                color: $dark-color;
+    
+                h1{
+                    font-family: 'LeagueSpartan', sans-serif;
+                    font-weight: bold;
+                    font-size: 55px;
+                    line-height: 60px;
+                    color: $dark-color;
+    
+                    span{
+                        font-weight: normal;
+                        color: $accent;
+                    }
+                }
+    
+                p{
+                    margin-top: 30px;
+                    font-family: 'SpaceMono', monospace;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: $dark-color;
+                }
+    
+                .m1{
+                    top: 10px;
+                    left: -35px;
+                }
+            }
+        }
+    }  
+}
+
+// PRE-FOOTER SECTION
+.prefooter{
+    .container{
+        min-height: 480px;
+        .wrap{
+            flex-direction: column;
+            img{
+                width: 70px;
+            }
+
+            h1 {
+                font-family: 'LeagueSpartan', sans-serif;
+                font-weight: bold;
+                text-align: center;
+                font-size: 40px;
+                line-height: 50px;
+                color: $light-color;
+                margin: 30px 0 45px 0;
+
+                span{
+                    font-weight: normal;
+                }
+            }
+
+            p.button-fill{
+                font-family: 'LeagueSpartan';
+                font-size: 20px;
+                color: $light-color;
+
+                width: auto;
+                background-color: $accent;
+                padding: 15px 30px;
+
+                border-radius: 30px;
+            }
+        }
+    }
+}
+
+// FOOTER
+.footer{
+    background-color: $accent;
+}

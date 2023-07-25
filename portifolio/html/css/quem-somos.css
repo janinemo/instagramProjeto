@@ -1,0 +1,659 @@
+html, body, * {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'SpaceMono';
+  src: url("../fonts/SpaceMono-Regular.woff2") format("woff2");
+  font-weight: normal;
+}
+
+/* Importando fonte Space-Mono Regular*/
+@font-face {
+  font-family: 'SpaceMono';
+  src: url("../fonts/SpaceMono-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+
+/* Importando fonte Space-Mono Bold*/
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: url("../fonts/LeagueSpartan-Light.woff2") format("woff2");
+  font-weight: normal;
+}
+
+/* Importando fonte League Spartan Regular */
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: url("../fonts/LeagueSpartan-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+
+/* Importando fonte League Spartan Bold */
+.divider-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.divider-wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.divider-wave .shape-fill {
+  fill: #e0e0e0;
+}
+
+.divider-wave-opacity {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.divider-wave-opacity svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.divider-wave-opacity .shape-fill {
+  fill: #212121;
+}
+
+.divider-triangle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.divider-triangle svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.divider-triangle .shape-fill {
+  fill: #e0e0e0;
+}
+
+.divider-book {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.divider-book svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+
+.divider-book .shape-fill {
+  fill: #212121;
+}
+
+.section {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  display: block;
+}
+
+.container {
+  min-height: 800px;
+  max-width: 1140px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap {
+  width: 100%;
+  position: relative;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body {
+  background-color: #212121;
+  font-family: 'SpaceMono', monospace;
+  font-weight: normal;
+}
+
+.memphis {
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 765px) {
+  .container {
+    max-width: 765px;
+    padding: 0 20px;
+  }
+}
+
+.my-menu {
+  z-index: 10;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.my-menu .menu-sticky {
+  min-height: 130px;
+  -webkit-transition: min-height 1s ease;
+  transition: min-height 1s ease;
+}
+
+.my-menu .menu-sticky .row .col-15 {
+  width: 15%;
+}
+
+.my-menu .menu-sticky .row .col-40 {
+  width: 40%;
+}
+
+.my-menu .menu-sticky .row .col-85 {
+  width: 85%;
+}
+
+.my-menu .menu-sticky .row .menu-items {
+  font-family: 'LeagueSpartan';
+  color: #e0e0e0;
+  font-size: 25px;
+  line-height: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.my-menu .menu-sticky .row .menu-items ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+.my-menu .menu-sticky .row .menu-items ul li {
+  cursor: pointer;
+}
+
+.my-menu .menu-sticky .row .menu-items ul li a {
+  text-decoration: none;
+  font-family: 'LeagueSpartan';
+  color: #e0e0e0;
+  font-size: 25px;
+  line-height: 30px;
+  -webkit-transition: all ease 500ms;
+  transition: all ease 500ms;
+}
+
+.my-menu .menu-sticky .row .menu-items ul li a:hover {
+  color: #adadad;
+}
+
+.my-menu .menu-sticky .row .menu-buttons {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.my-menu .menu-sticky .row .menu-buttons .button {
+  text-decoration: none;
+  list-style: none;
+  border-radius: 30px;
+  padding: 5px;
+  border: solid #00695c 2px;
+  margin: 10px;
+  cursor: pointer;
+  min-width: 190px;
+  text-align: center;
+  font-family: 'LeagueSpartan';
+  color: #e0e0e0;
+  font-size: 18px;
+}
+
+.my-menu.blured {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+.my-menu.blured .menu-sticky {
+  min-height: 110px;
+}
+
+.footer .container {
+  min-height: 50px;
+}
+
+.footer .container .wrap {
+  padding: 20px;
+  font-family: 'LeagueSpartan';
+  color: #e0e0e0;
+  font-size: 25px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00695c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #004d40;
+}
+
+::-webkit-scrollbar-track {
+  background: #212121;
+}
+
+.back-to-top-link {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  padding: 0.25rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  -webkit-transition: -webkit-transform 80ms ease-in;
+  transition: -webkit-transform 80ms ease-in;
+  transition: transform 80ms ease-in;
+  transition: transform 80ms ease-in, -webkit-transform 80ms ease-in;
+}
+
+.back-to-top-link img {
+  width: 75%;
+}
+
+.back-to-top-link:hover, .back-to-top-link:focus {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.header {
+  padding-top: 100px;
+  overflow: hidden;
+  background-image: url("../img/bg/bg-quem-somos.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header .image-content img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 1000px;
+}
+
+.header .row .text-content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.header .row .text-content h1 {
+  font-family: 'LeagueSpartan', sans-serif;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 100px;
+  color: #e0e0e0;
+}
+
+.header .row .text-content h1 span {
+  font-weight: normal;
+}
+
+.header .row .text-content p {
+  font-family: 'SpaceMono', monospace;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #e0e0e0;
+  width: 530px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.header .row .text-content p span {
+  font-weight: bold;
+}
+
+.sobre .container {
+  min-height: 680px;
+}
+
+.sobre .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sobre .row .col-30 {
+  width: 30%;
+}
+
+.sobre .row .col-65 {
+  width: 65%;
+}
+
+.sobre .row .logo svg {
+  width: 325px;
+}
+
+.sobre .row .logo svg .jh {
+  fill: #00695c;
+  z-index: 2;
+  -webkit-transition: all ease 500ms;
+  transition: all ease 500ms;
+}
+
+.sobre .row .logo svg .logo {
+  fill: #e0e0e0;
+  opacity: 50%;
+  z-index: 0;
+  -webkit-transition: all ease 500ms;
+  transition: all ease 500ms;
+}
+
+.sobre .row .logo svg:hover .jh {
+  opacity: 50%;
+  z-index: 0;
+}
+
+.sobre .row .logo svg:hover .logo {
+  opacity: 100%;
+  z-index: 1;
+}
+
+.sobre .row .text-content h1 {
+  font-family: 'LeagueSpartan', sans-serif;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 60px;
+  color: #e0e0e0;
+}
+
+.sobre .row .text-content p {
+  margin-top: 30px;
+  font-family: 'SpaceMono', monospace;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #e0e0e0;
+}
+
+.sobre .row .text-content .m1 {
+  top: 15px;
+  left: -25px;
+}
+
+.equipe .container {
+  min-height: 300px;
+}
+
+.equipe .wrap h1 {
+  font-family: 'LeagueSpartan', sans-serif;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 60px;
+  color: #e0e0e0;
+}
+
+.equipe .wrap p {
+  margin-top: 30px;
+  font-family: 'SpaceMono', monospace;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #e0e0e0;
+}
+
+.equipe .wrap .m1 {
+  top: 20px;
+  left: -25px;
+}
+
+.team .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.team .container .row {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  -webkit-transition: all ease 500ms;
+  transition: all ease 500ms;
+}
+
+.team .container .row .col-30 {
+  width: 30%;
+}
+
+.team .container .row .col-65 {
+  width: 65%;
+}
+
+.team .container .row .image-content .perfil {
+  width: 315px;
+  height: 315px;
+  border-radius: 50%;
+  border: solid 5px #00695c;
+}
+
+.team .container .row .image-content .m1 {
+  bottom: 0;
+  right: 40px;
+}
+
+.team .container .row .image-content .m2 {
+  top: 0;
+  left: 0;
+}
+
+.team .container .row .image-content .m3 {
+  width: 120px;
+  top: 0;
+  right: 0;
+}
+
+.team .container .row .text-content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 50px;
+}
+
+.team .container .row .text-content h1 {
+  font-family: 'LeagueSpartan', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 45px;
+  color: #e0e0e0;
+}
+
+.team .container .row .text-content p {
+  margin-top: 30px;
+  font-family: 'SpaceMono', monospace;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #e0e0e0;
+}
+
+.team .container .row .text-content a.button-fill {
+  font-family: 'LeagueSpartan';
+  font-size: 20px;
+  margin-top: 40px;
+  width: 240px;
+  background-color: #00695c;
+  padding: 15px 30px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+.team .container .row:hover .m1 {
+  bottom: 20px;
+  right: 30px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.team .container .row:hover .m2 {
+  top: -20px;
+  left: -15px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.team .container .row:hover .m3 {
+  width: 120px;
+  top: -10px;
+  right: -15px;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.team .container .row.right .image-content {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.team .container .row.right .text-content {
+  text-align: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 50px;
+  margin-left: 0;
+}
+
+.footer {
+  background-color: #00695c;
+}
+
+@media (max-width: 1024px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 765px) {
+  .column {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=quem-somos.css.map */

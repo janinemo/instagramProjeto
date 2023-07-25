@@ -1,0 +1,231 @@
+@import 'reset';
+@import 'colors';
+@import 'fonts';
+@import 'my-dividers';
+@import 'my-styles';
+
+@import 'menu';
+@import 'footer';
+
+@import 'scroll';
+
+//FORMULARIO
+.form{
+    
+    overflow: hidden;
+    background-image: url("../img/bg/bg-quem-somos.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    .container{
+        height: 100vh;
+        margin-top: 130px;
+        margin-bottom: 100px;
+        .wrap{
+            flex-direction: column;
+    
+            .form-cadastro{
+                background-color: $light-color;
+                width: 40vw;
+                min-height: 100px;
+    
+                border-top: $accent 10px solid;
+                color: $dark-color;
+    
+                .form-title{
+                    margin: 20px;
+                    font-family: "LeagueSpartan";
+                    font-size: 30px;
+                    font-weight: 700;
+                }
+    
+                .divider{
+                    border-top: $dark-color 1px solid;
+                    width: 100%;
+                    opacity: 30%;
+                }
+    
+                .resp{
+                    margin: 20px;
+
+                    .question-title{
+                        margin-bottom: 10px;
+                        font-family: "LeagueSpartan";
+                        font-size: 20px;
+                        font-weight: 300;
+                    }
+
+                    .input-field{
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 1px solid $medium-grey;
+                        border-radius: 0;
+                        outline: none;
+                        height: 40px;
+                        width: 70%;
+                        font-size: 16px;
+                        margin: 0 0 8px 0;
+                        padding: 0;
+                        transition: box-shadow .3s, border .3s;
+
+                        &:focus{
+                            border-bottom: 1px solid $accent;
+                            box-shadow: 0 1px 0 0 $accent;
+                        }                       
+
+                    }
+
+                    textarea.input-field {
+                        resize: none;
+                        height: 200px;
+                    }
+
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+
+                    .radio{
+                        position: absolute;
+                        opacity: 0;
+                        pointer-events: none;
+
+                        &:not(:checked)+span{
+                            position: relative;
+                            padding-left: 35px;
+                            cursor: pointer;
+                            display: inline-block;
+                            height: 25px;
+                            line-height: 25px;
+                            font-size: 1rem;
+                            transition: .28s ease;
+                            user-select: none;
+
+                            &::before{
+                                border: 1px solid $medium-grey;
+                                border-radius: 50%;
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                margin: 4px;
+                                width: 16px;
+                                height: 16px;
+                                z-index: 0;
+                            }
+
+                            &::after{
+                                transform: scale(0);
+                                background-color: $accent;
+                                border: 2px solid $accent;
+                                border-radius: 50%;
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                margin: 4px;
+                                width: 16px;
+                                height: 16px;
+                                z-index: 0;
+                                -webkit-transition: .28s ease;
+                                transition: .28s ease;
+                            }
+                        }
+
+                        &:checked+span{
+                            position: relative;
+                            padding-left: 35px;
+                            cursor: pointer;
+                            display: inline-block;
+                            height: 25px;
+                            line-height: 25px;
+                            font-size: 1rem;
+                            transition: .28s ease;
+                            user-select: none;
+
+                            &::before{
+                                border: 1px solid $accent;
+                                border-radius: 50%;
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                margin: 4px;
+                                width: 16px;
+                                height: 16px;
+                                z-index: 0;
+                            }
+
+                            &::after{
+                                transform: scale(0.5);
+                                background-color: $accent;
+                                border: 1px solid $accent;
+                                border-radius: 50%;
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                margin: 4px;
+                                width: 16px;
+                                height: 16px;
+                                z-index: 0;
+                                -webkit-transition: .28s ease;
+                                transition: .28s ease;
+                            }
+                        }                        
+                    }                    
+                }
+            }
+
+            .submit {
+                display: flex;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: flex-end;
+                padding: 30px;
+
+                button.button-fill{
+                    border: none;
+                    font-family: 'LeagueSpartan';
+                    font-size: 20px;
+
+                    width: fit-content;
+                    color: $light-color;
+                    background-color: $accent;
+                    padding: 15px 30px;
+
+                    border-radius: 30px;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: darken($accent, 2%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FOOTER
+.footer{
+    background-color: $accent;
+    min-height: 5vh;
+}
+
+// APLICANDO RESPONSIVIDADE
+// TABLETS
+@media (max-width:1024px) {
+    .column {
+        width: 100%;
+    }
+}
+
+// CELULARES
+@media (max-width:765px)  {
+    .column {
+        width: 100%;
+    }
+}

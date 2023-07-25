@@ -1,0 +1,285 @@
+// HEADER SECTION
+.header {
+    padding-top: 100px;
+    overflow: hidden;
+    background-image: url("../img/bg/bg-quem-somos.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .image-content{
+        img{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            width: 1000px;
+        }
+    }
+
+    .row{
+        .text-content{
+            flex-direction: column;
+            align-content: flex-start;
+            align-items: flex-start;
+
+            h1 {
+                font-family: 'LeagueSpartan', sans-serif;
+                font-weight: bold;
+                font-size: 90px;
+                line-height: 100px;
+                color: $light-color;
+    
+                span{
+                    font-weight: normal;
+                }
+            }
+    
+            p{
+                font-family: 'SpaceMono', monospace;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: $light-color;
+                width: 530px;
+    
+                margin-top: 30px;
+                margin-bottom: 30px;
+    
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+// ABOUT JH SECTION
+.sobre{
+    .container{
+        min-height: 680px;
+    }
+    .row{
+        justify-content: space-between;
+        .col-30{
+            width: 30%;
+        }
+        .col-65{
+            width: 65%;
+        }
+
+        .logo{
+            svg{
+                width: 325px;             
+                .jh{
+                    fill: $accent;
+                    z-index: 2;
+                    transition: all ease 500ms;
+                }
+    
+                .logo{
+                    fill: $light-color;
+                    opacity: 50%;
+                    z-index: 0;
+                    transition: all ease 500ms;
+                }
+                
+                &:hover{
+                    .jh{
+                        opacity: 50%;
+                        z-index: 0;
+                    }
+        
+                    .logo{
+                        opacity: 100%;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+        
+        .text-content{
+
+            h1{
+                font-family: 'LeagueSpartan', sans-serif;
+                font-weight: bold;
+                font-size: 55px;
+                line-height: 60px;
+                color: $light-color;
+            }
+
+            p{
+                margin-top: 30px;
+                font-family: 'SpaceMono', monospace;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: $light-color;
+            }
+
+            .m1{
+                top: 15px;
+                left: -25px;
+            }
+        }
+    }
+}
+
+// ABOUT EQUIPE SECTION
+.equipe{
+    .container{
+        min-height: 300px;
+    }
+    .wrap{
+        h1{
+            font-family: 'LeagueSpartan', sans-serif;
+            font-weight: bold;
+            font-size: 55px;
+            line-height: 60px;
+            color: $light-color;
+        }
+
+        p{
+            margin-top: 30px;
+            font-family: 'SpaceMono', monospace;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            color: $light-color;
+        }
+
+        .m1{
+            top: 20px;
+            left: -25px;
+        }
+    }
+}
+
+// TEAM SECTION
+
+.team{
+    .container{
+        flex-direction: column;
+        .row{
+            margin-top: 100px;
+            margin-bottom: 100px;
+
+            .col-30{
+                width: 30%;
+            }
+
+            .col-65{
+                width: 65%;
+            }
+
+            transition: all ease 500ms;
+
+            .image-content{
+                .perfil{
+                    width: 315px;
+                    height: 315px;
+                    border-radius: 50%;
+                    border: solid 5px $accent
+
+                }
+                .m1{
+                    bottom: 0;
+                    right: 40px;
+                }
+
+                .m2{
+                    top: 0;
+                    left: 0;
+                }
+
+                .m3{
+                    width: 120px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .text-content{
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 50px;
+
+                h1{
+                    font-family: 'LeagueSpartan', sans-serif;
+                    font-weight: bold;
+                    font-size: 40px;
+                    line-height: 45px;
+                    color: $light-color;
+                }
+        
+                p{
+                    margin-top: 30px;
+                    font-family: 'SpaceMono', monospace;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: $light-color;
+                }
+
+                a.button-fill{
+                    font-family: 'LeagueSpartan';
+                    font-size: 20px;
+                    
+                    margin-top: 40px;
+                    width: 240px;
+                    background-color: $accent;
+                    padding: 15px 30px;
+                    text-align: center;
+
+                    cursor: pointer;
+    
+                    border-radius: 30px;
+
+                    text-decoration: none;
+                    color: $light-color;
+                }
+            }
+
+            &:hover{
+                .m1{
+                    bottom: 20px;
+                    right: 30px;
+                    transform: scale(1.1);
+                }
+
+                .m2{
+                    top: -20px;
+                    left: -15px;
+                    transform: scale(1.1);
+                }
+
+                .m3{
+                    width: 120px;
+                    top: -10px;
+                    right: -15px;
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        .row.right{
+            .image-content{
+                order: 1;
+            }
+            .text-content{
+                text-align: right;
+                align-items: flex-end;
+                margin-right: 50px;
+                margin-left: 0;
+            }
+        }
+
+
+    }
+}
+
+
+// FOOTER
+.footer{
+    background-color: $accent;
+}

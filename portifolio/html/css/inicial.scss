@@ -1,0 +1,26 @@
+@import 'reset';
+@import 'colors';
+@import 'fonts';
+@import 'my-dividers';
+@import 'my-styles';
+@import 'pg-inicial';
+
+@import 'menu';
+@import 'footer';
+
+@import 'scroll';
+
+// APLICANDO RESPONSIVIDADE
+// TABLETS
+@media (max-width:1024px) {
+    .column {
+        width: 100%;
+    }
+}
+
+// CELULARES
+@media (max-width:765px)  {
+    .column {
+        width: 100%;
+    }
+}
