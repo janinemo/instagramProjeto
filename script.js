@@ -7,9 +7,9 @@ function toggleMode() {
   
   //substituir a img de acordo com o tema
   if(html.classList.contains('light')){
-    img.setAttribute('src', './assets/assets/janine.jfif')
+    img.setAttribute('src', './assets/janine.jfif')
   } else {
-    img.setAttribute('src', './assets/assets/janine1.jpg')
+    img.setAttribute('src', './assets/janine1.jpg')
   }
 
   
